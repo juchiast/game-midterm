@@ -7,7 +7,7 @@ public class VehicleControl : MonoBehaviour
 {
     private GameObject FrontWheel, RearWheel;
 
-    private Rigidbody2D RearWheelBody, FrontWheelBody;
+    private Rigidbody2D RearWheelBody, FrontWheelBody, CarBody;
     
     private Camera MainCamera;
     
@@ -18,6 +18,7 @@ public class VehicleControl : MonoBehaviour
         RearWheel = GameObject.Find("RearWheel");
         RearWheelBody = RearWheel.GetComponent<Rigidbody2D>();
         FrontWheelBody = FrontWheel.GetComponent<Rigidbody2D>();
+        CarBody = GetComponent<Rigidbody2D>();
         MainCamera = Camera.main;
     }
 
@@ -26,14 +27,19 @@ public class VehicleControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            RearWheelBody.AddTorque(30);
-            FrontWheelBody.AddTorque(30);    
+            RearWheelBody.AddTorque(40);
+            FrontWheelBody.AddTorque(40);    
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            RearWheelBody.AddTorque(-30);
-            FrontWheelBody.AddTorque(-30);
+            RearWheelBody.AddTorque(-40);
+            FrontWheelBody.AddTorque(-40);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CarBody.AddForce(Vector2.right * 40, ForceMode2D.Impulse);
         }
         
         DoCamera();
