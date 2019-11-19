@@ -95,7 +95,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.1
   m_GravityScale: 1
@@ -138,7 +138,7 @@ WheelJoint2D:
   m_ConnectedAnchor: {x: 1.513889, y: -0.622222}
   m_Suspension:
     m_DampingRatio: 0.7
-    m_Frequency: 20
+    m_Frequency: 40
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -239,7 +239,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.1
   m_GravityScale: 1
@@ -282,7 +282,7 @@ WheelJoint2D:
   m_ConnectedAnchor: {x: -1.4333328, y: -0.622222}
   m_Suspension:
     m_DampingRatio: 0.7
-    m_Frequency: 20
+    m_Frequency: 40
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 4266191349279533982}
   - component: {fileID: 4266191349279533981}
   m_Layer: 0
-  m_Name: Vehicle
+  m_Name: BlueVolkwagen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 30
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
