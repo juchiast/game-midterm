@@ -28,7 +28,7 @@ public class VehicleControl : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             RearWheelBody.AddTorque(40);
-            FrontWheelBody.AddTorque(40);    
+            FrontWheelBody.AddTorque(40);
         }
 
         if (Input.GetKey(KeyCode.D))

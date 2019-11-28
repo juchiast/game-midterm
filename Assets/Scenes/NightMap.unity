@@ -864,10 +864,55 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5485248847324947504, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 699233323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847324947504, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847324947510, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847439996209, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 699233323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847439996209, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847439996215, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5485248847648007914, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
         type: 3}
       propertyPath: m_Name
       value: RedVolkwagen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847648007914, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847648007915, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 699233323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485248847648007915, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5485248847648007924, guid: ccd8c5afb8bd254eaa2ae9271702a4f7,
         type: 3}
@@ -1006,3 +1051,117 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2101175535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4266191348144775185, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -541532265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191348144775185, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191348144775186, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191348743368872, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191348743368879, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -541532265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191348743368879, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533976, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533977, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -541532265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533977, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533978, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_Name
+      value: BlueVolkwagen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266191349279533978, guid: bbb1533d70c2fac43a6a1ed290f2ac71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bbb1533d70c2fac43a6a1ed290f2ac71, type: 3}
