@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class MapSelector : MonoBehaviour
 {
     public static String SelectedMap;
-    public static String SelectedCar;
 
     private GameObject MapCheck;
     private GameObject BtnWinter;
@@ -17,7 +16,6 @@ public class MapSelector : MonoBehaviour
     void Start()
     {
         SelectedMap = "NightMap";
-        SelectedCar = "Blue";
         
         MapCheck = GameObject.Find("MapCheck");
         BtnWinter = GameObject.Find("BtnWinter");

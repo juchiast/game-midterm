@@ -274,7 +274,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 147352823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1201423984}
+        m_MethodName: SelectBlue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &147352823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +403,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 155908318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1201423984}
+        m_MethodName: SelectTruck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &155908318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,7 +1074,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1045475815}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1201423984}
+        m_MethodName: SelectRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1045475815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,6 +1285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201423985}
+  - component: {fileID: 1201423984}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -1259,6 +1293,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1201423984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201423983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac779de9d5a996f2caa4250e5a9f5791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1201423985
 Transform:
   m_ObjectHideFlags: 0
