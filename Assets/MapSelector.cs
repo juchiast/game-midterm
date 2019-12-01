@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MapSelector : MonoBehaviour
 {
-    public static String SelectedMap;
+    public static String SelectedMap = "NightMap";
 
     private GameObject MapCheck;
     private GameObject BtnWinter;
@@ -15,8 +15,6 @@ public class MapSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SelectedMap = "NightMap";
-        
         MapCheck = GameObject.Find("MapCheck");
         BtnWinter = GameObject.Find("BtnWinter");
         BtnNight = GameObject.Find("BtnNight");

@@ -80,7 +80,7 @@ public class CarSelector : MonoBehaviour
             if (name == CarNames[i])
             {
                 SelectedCar = i;
-                break;
+                return;
             }
         }
         throw new Exception("RIP");
