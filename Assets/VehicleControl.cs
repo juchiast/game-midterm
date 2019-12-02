@@ -62,10 +62,11 @@ public class VehicleControl : MonoBehaviour
     private float MAX_FLIP_TIME = 4;
 
     private void ProbeCrash() {
-        var z = transform.localEulerAngles.z;
-
+        var z = transform.eulerAngles.z;
+        Debug.Log(z);
         if (90 <= z && z <= 270)
         {
+            Debug.Log(true);
             if (FlipStartTime < 0) FlipStartTime = Time.time;
             else
             {
@@ -75,6 +76,7 @@ public class VehicleControl : MonoBehaviour
         }
         else
         {
+            Debug.Log(false);
             FlipStartTime = -1;
         }
     }

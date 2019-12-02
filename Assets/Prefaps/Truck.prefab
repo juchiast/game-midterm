@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 906255075557237097}
   - component: {fileID: 906255075557237096}
   - component: {fileID: 906255075557237095}
-  - component: {fileID: 906255075557237098}
   m_Layer: 0
   m_Name: RearWheel
   m_TagString: Untagged
@@ -145,18 +144,6 @@ WheelJoint2D:
   m_Motor:
     m_MotorSpeed: 5
     m_MaximumMotorForce: 10000
---- !u!114 &906255075557237098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906255075557237092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a96ed469416f188cb99c1740c4f637c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &906255075877492502
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,8 +156,9 @@ GameObject:
   - component: {fileID: 906255075877492503}
   - component: {fileID: 906255075877492505}
   - component: {fileID: 906255075877492506}
+  - component: {fileID: 10619336061695410}
   m_Layer: 0
-  m_Name: CyberTruck
+  m_Name: Truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,6 +346,18 @@ PolygonCollider2D:
       - {x: 1.2406553, y: -0.61016357}
       - {x: 1.2406551, y: -0.44565514}
       - {x: 1.3373555, y: -0.29338914}
+--- !u!114 &10619336061695410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906255075877492502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a96ed469416f188cb99c1740c4f637c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906255075972401711
 GameObject:
   m_ObjectHideFlags: 0
