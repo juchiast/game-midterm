@@ -2,15 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VehicleControl : MonoBehaviour
 {
     private GameObject FrontWheel, RearWheel;
 
     private Rigidbody2D RearWheelBody, FrontWheelBody, CarBody;
-    
+
     private Camera MainCamera;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,13 +42,35 @@ public class VehicleControl : MonoBehaviour
         {
             CarBody.AddForce(Vector2.right * 40, ForceMode2D.Impulse);
         }
-        
+
         DoCamera();
     }
-    
-    private void DoCamera() {
+
+    private void DoCamera()
+    {
         Vector3 pos = MainCamera.transform.position;
         pos.x = transform.position.x;
         MainCamera.transform.position = pos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "FinishCoin")
+        {
+            FinishGame(true);
+        }
+        else
+        {
+            ProbeCrash();
+        }
+    }
+
+    private void ProbeCrash()
+    {
+    }
+
+    private void FinishGame(bool win)
+    {
+        SceneManager.LoadScene("MapSelector");
     }
 }
