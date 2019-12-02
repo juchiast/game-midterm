@@ -1,4 +1,4 @@
-# Đồ án giữa kì môn Phát triển Game
+# Đồ án giữa kì môn Phát triển Game CNTN16
 
 ## Thông tin nhóm
 |   MSSV  |     Họ và tên     |
