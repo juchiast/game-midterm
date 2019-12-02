@@ -12,6 +12,10 @@ public class VehicleControl : MonoBehaviour
 
     private Camera MainCamera;
 
+    private bool FirstUpdate;
+    
+    private float StartTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +25,18 @@ public class VehicleControl : MonoBehaviour
         FrontWheelBody = FrontWheel.GetComponent<Rigidbody2D>();
         CarBody = GetComponent<Rigidbody2D>();
         MainCamera = Camera.main;
+        FirstUpdate = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (FirstUpdate)
+        {
+            StartTime = Time.time;
+            FirstUpdate = false;
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
             RearWheelBody.AddTorque(40);
@@ -44,7 +55,10 @@ public class VehicleControl : MonoBehaviour
         }
 
         DoCamera();
+        ProbeCrash();
     }
+
+    private void ProbeCrash() {}
 
     private void DoCamera()
     {
@@ -59,18 +73,15 @@ public class VehicleControl : MonoBehaviour
         {
             FinishGame(true);
         }
-        else
-        {
-            ProbeCrash();
-        }
-    }
-
-    private void ProbeCrash()
-    {
     }
 
     private void FinishGame(bool win)
     {
-        SceneManager.LoadScene("MapSelector");
+        if (win)
+        {
+            float now = Time.time;
+            FinishWin.FinishTime = now - StartTime;
+            SceneManager.LoadScene("FinishWin");
+        }
     }
 }
