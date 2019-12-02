@@ -58,7 +58,26 @@ public class VehicleControl : MonoBehaviour
         ProbeCrash();
     }
 
-    private void ProbeCrash() {}
+    private float FlipStartTime = -1;
+    private float MAX_FLIP_TIME = 4;
+
+    private void ProbeCrash() {
+        var z = transform.localEulerAngles.z;
+
+        if (90 <= z && z <= 270)
+        {
+            if (FlipStartTime < 0) FlipStartTime = Time.time;
+            else
+            {
+                var flipped = Time.time - FlipStartTime;
+                if (flipped > MAX_FLIP_TIME) FinishGame(false);
+            }
+        }
+        else
+        {
+            FlipStartTime = -1;
+        }
+    }
 
     private void DoCamera()
     {
@@ -82,6 +101,10 @@ public class VehicleControl : MonoBehaviour
             float now = Time.time;
             FinishWin.FinishTime = now - StartTime;
             SceneManager.LoadScene("FinishWin");
+        }
+        else
+        {
+            SceneManager.LoadScene("FinishLose");
         }
     }
 }
