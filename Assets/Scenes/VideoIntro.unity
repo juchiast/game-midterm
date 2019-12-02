@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 1341747432}
   - component: {fileID: 1341747431}
   - component: {fileID: 1341747430}
+  - component: {fileID: 1341747433}
   m_Layer: 5
   m_Name: VideoTrailer
   m_TagString: Untagged
@@ -473,3 +474,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341747428}
   m_CullTransparentMesh: 0
+--- !u!114 &1341747433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341747428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6807bae090e5945a5ff02aa9a8316b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
