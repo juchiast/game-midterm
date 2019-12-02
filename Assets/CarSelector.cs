@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class CarSelector : MonoBehaviour
 {
-    public static int SelectedCar = 2;
+    public static int SelectedCar = 0;
 
     public static readonly String[] CarNames = {"Blue", "Red", "Truck"};
 
