@@ -53,7 +53,7 @@ public class CarSelector : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(MapSelector.SelectedMap);
+        SceneManager.LoadScene("Help");
     }
 
     public void SelectBlue()
