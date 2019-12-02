@@ -25,7 +25,7 @@ public class VehicleControl : MonoBehaviour
         FrontWheelBody = FrontWheel.GetComponent<Rigidbody2D>();
         CarBody = GetComponent<Rigidbody2D>();
         MainCamera = Camera.main;
-        FirstUpdate = false;
+        FirstUpdate = true;
     }
 
     // Update is called once per frame
@@ -63,10 +63,8 @@ public class VehicleControl : MonoBehaviour
 
     private void ProbeCrash() {
         var z = transform.eulerAngles.z;
-        Debug.Log(z);
         if (90 <= z && z <= 270)
         {
-            Debug.Log(true);
             if (FlipStartTime < 0) FlipStartTime = Time.time;
             else
             {
@@ -76,7 +74,6 @@ public class VehicleControl : MonoBehaviour
         }
         else
         {
-            Debug.Log(false);
             FlipStartTime = -1;
         }
     }
