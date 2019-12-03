@@ -18,6 +18,6 @@ public class Skip : MonoBehaviour
     }
     public void skip()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Intro");
     }
 }

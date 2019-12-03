@@ -31,6 +31,6 @@ public class VideoIntro : MonoBehaviour
     public void onMovieEnded()
     {
         //Debug.Log("Movie Ended!");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Intro");
     }
 }
