@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class VehicleControl : MonoBehaviour
 {
-    private GameObject FrontWheel, RearWheel;
+    private GameObject FrontWheel, RearWheel, FinishCoin;
 
-    private Text TimeText, SpeedText;
+    private Text TimeText, SpeedText, LeftText;
 
     private Rigidbody2D RearWheelBody, FrontWheelBody, CarBody;
 
@@ -27,6 +27,7 @@ public class VehicleControl : MonoBehaviour
     {
         FrontWheel = GameObject.Find("FrontWheel");
         RearWheel = GameObject.Find("RearWheel");
+        FinishCoin = GameObject.Find("FinishCoin");
         RearWheelBody = RearWheel.GetComponent<Rigidbody2D>();
         FrontWheelBody = FrontWheel.GetComponent<Rigidbody2D>();
         CarBody = GetComponent<Rigidbody2D>();
@@ -40,6 +41,8 @@ public class VehicleControl : MonoBehaviour
         TimeText = tmp.GetComponent<Text>();
         tmp = GameObject.Find("SpeedText");
         SpeedText = tmp.GetComponent<Text>();
+        tmp = GameObject.Find("LeftText");
+        LeftText = tmp.GetComponent<Text>();
         audioD.Play();
         audioD.volume = 0;
     }
@@ -83,6 +86,7 @@ public class VehicleControl : MonoBehaviour
     {
         TimeText.text = "Time: " + (Time.time - StartTime).ToString("0.00") + "s";
         SpeedText.text = "Speed: " + CarBody.velocity.magnitude.ToString("0.00");
+        LeftText.text = "Distance: " + (FinishCoin.transform.position.x - CarBody.transform.position.x).ToString("0.00");
     }
 
     private void SetSoundVolume()
