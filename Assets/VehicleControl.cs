@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class VehicleControl : MonoBehaviour
 {
     private GameObject FrontWheel, RearWheel;
+
+    private Text TimeText, SpeedText;
 
     private Rigidbody2D RearWheelBody, FrontWheelBody, CarBody;
 
@@ -32,6 +35,13 @@ public class VehicleControl : MonoBehaviour
         audioSpace = sounds[1];
         MainCamera = Camera.main;
         FirstUpdate = true;
+
+        var tmp = GameObject.Find("TimeText");
+        TimeText = tmp.GetComponent<Text>();
+        tmp = GameObject.Find("SpeedText");
+        SpeedText = tmp.GetComponent<Text>();
+        audioD.Play();
+        audioD.volume = 0;
     }
 
     // Update is called once per frame
@@ -44,7 +54,6 @@ public class VehicleControl : MonoBehaviour
         }
 
         audioSpace.Pause();
-        audioD.Pause();
         if (Input.GetKey(KeyCode.A))
         {
             RearWheelBody.AddTorque(40);
@@ -55,7 +64,7 @@ public class VehicleControl : MonoBehaviour
         {
             RearWheelBody.AddTorque(-40);
             FrontWheelBody.AddTorque(-40);
-            audioD.Play();
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -66,6 +75,31 @@ public class VehicleControl : MonoBehaviour
 
         DoCamera();
         ProbeCrash();
+        SetSoundVolume();
+        SetText();
+    }
+
+    private void SetText()
+    {
+        TimeText.text = "Time: " + (Time.time - StartTime).ToString("0.00") + "s";
+        SpeedText.text = "Speed: " + CarBody.velocity.magnitude.ToString("0.00");
+    }
+
+    private void SetSoundVolume()
+    {
+        float z = RearWheelBody.angularVelocity;
+        z = Mathf.Abs(z / 360f);
+        var MAX = 10f;
+        float vol = 0;
+        if (z > MAX) vol = 1;
+        else
+        {
+            vol = z / 30f;
+        }
+
+        var oldVol = audioD.volume;
+        oldVol += Mathf.Min(vol - oldVol, 0.05f);
+        audioD.volume = oldVol;
     }
 
     private float FlipStartTime = -1;
