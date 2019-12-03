@@ -25,6 +25,7 @@ public class VehicleControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 60;
         FrontWheel = GameObject.Find("FrontWheel");
         RearWheel = GameObject.Find("RearWheel");
         FinishCoin = GameObject.Find("FinishCoin");
