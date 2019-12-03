@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 906255075877492503}
   - component: {fileID: 906255075877492505}
   - component: {fileID: 906255075877492506}
-  - component: {fileID: -5760277297107753603}
+  - component: {fileID: 2343902832870653328}
   - component: {fileID: 6144642493360022338}
   - component: {fileID: 10619336061695410}
   m_Layer: 0
@@ -348,7 +348,7 @@ PolygonCollider2D:
       - {x: 1.2406553, y: -0.61016357}
       - {x: 1.2406551, y: -0.44565514}
       - {x: 1.3373555, y: -0.29338914}
---- !u!82 &
+--- !u!82 &2343902832870653328
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

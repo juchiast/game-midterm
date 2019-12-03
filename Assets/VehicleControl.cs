@@ -18,7 +18,7 @@ public class VehicleControl : MonoBehaviour
 
     AudioSource[] sounds;
 
-    AudioSource audioD, audioA, audioSpace;
+    AudioSource audioD, audioSpace;
     // Start is called before the first frame update
     void Start()
     {
