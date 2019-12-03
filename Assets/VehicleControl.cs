@@ -16,6 +16,9 @@ public class VehicleControl : MonoBehaviour
     
     private float StartTime;
 
+    AudioSource[] sounds;
+
+    AudioSource audioD, audioA, audioSpace;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,9 @@ public class VehicleControl : MonoBehaviour
         RearWheelBody = RearWheel.GetComponent<Rigidbody2D>();
         FrontWheelBody = FrontWheel.GetComponent<Rigidbody2D>();
         CarBody = GetComponent<Rigidbody2D>();
+        sounds = GetComponents<AudioSource>();
+        audioD = sounds[0];
+        audioSpace = sounds[1];
         MainCamera = Camera.main;
         FirstUpdate = true;
     }
@@ -37,6 +43,8 @@ public class VehicleControl : MonoBehaviour
             FirstUpdate = false;
         }
 
+        audioSpace.Pause();
+        audioD.Pause();
         if (Input.GetKey(KeyCode.A))
         {
             RearWheelBody.AddTorque(40);
@@ -47,11 +55,13 @@ public class VehicleControl : MonoBehaviour
         {
             RearWheelBody.AddTorque(-40);
             FrontWheelBody.AddTorque(-40);
+            audioD.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             CarBody.AddForce(Vector2.right * 40, ForceMode2D.Impulse);
+            audioSpace.Play();
         }
 
         DoCamera();
