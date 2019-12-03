@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class CarSelector : MonoBehaviour
 {
-    public static int SelectedCar;
+    public static int SelectedCar = 0;
 
     public static readonly String[] CarNames = {"Blue", "Red", "Truck"};
 
@@ -21,8 +21,6 @@ public class CarSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SelectedCar = 0;
-
         CarImages = new[]
         {
             GameObject.Find("ImageBlue"),
@@ -55,7 +53,7 @@ public class CarSelector : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(MapSelector.SelectedMap);
+        SceneManager.LoadScene("Help");
     }
 
     public void SelectBlue()
